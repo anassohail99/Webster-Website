@@ -110,14 +110,15 @@ nav {
   height: auto;
   overflow: hidden;
   background: none;
-
+  /* z-index: 5; */
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 nav img {
   position: absolute;
   width: 250px;
-  height: auto;
   font-size: 2rem;
   left: 3%;
   padding: 0.7rem 1.5rem;
@@ -143,6 +144,15 @@ nav ul li a:hover {
   color: #ec366c;
   text-decoration: none;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 5;
+}
+
 .info {
   position: absolute;
   z-index: 4;
@@ -168,7 +178,7 @@ nav ul li a:hover {
   top: 9%;
   width: 600px;
   height: auto;
-  z-index: 4;
+  /* z-index: 4; */
   opacity: 0.7;
 }
 svg {
@@ -182,6 +192,7 @@ svg {
   nav img {
     width: 200px;
     height: auto;
+    padding-top: 1.2rem;
   }
 
   .svg img {
@@ -446,13 +457,23 @@ svg {
 blockquote span {
   color: #ec366c;
 }
-.fa-quote-left {
+.left-quote {
   border-left: 5px solid #ec366c;
   padding-left: 2rem;
   height: 50px;
 }
 @media screen and (max-width: 48em) {
-  .about-sec h3 {
+  .about {
+    padding: 1rem;
+  }
+  .about-sec {
+    text-align: left;
+  }
+  .about-sec h1 {
+    font-size: 1.5rem;
+  }
+  .about-sec h4,
+  p {
     font-size: 1rem;
   }
   .about-sec blockquote {
@@ -460,6 +481,7 @@ blockquote span {
     font-size: 1rem;
   }
 }
+
 /* about section ends here */
 
 .about-2 {
@@ -488,21 +510,21 @@ blockquote span {
 }
 @media screen and (max-width: 48em) {
   .about-2 h2 {
-    font-size: 1.5rem;
+    font-size: 1rem !important;
     padding-top: 1rem;
   }
-  .second-h5 {
-    font-size: 1rem;
+  .about-2 h5 {
+    font-size: 1rem !important;
   }
   .quote {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
 /* ABOUT 2 ends here */
 
 .about-3 {
-  height: 100vh;
+  height: 100%;
 }
 .about-3 h2 {
   font-size: 1.5rem;
@@ -510,52 +532,189 @@ blockquote span {
   color: #ec366c;
 }
 .about-3 h5 {
-  line-height: 1.2;
+  line-height: 1.7;
   text-align: left;
 }
-.monitor-slider {
+
+.laptop img {
+  padding-top: 5rem;
   width: 100%;
-  max-width: 351px;
-  min-height: 210px;
-  margin: 0 auto;
-  background: url(../Images/side-monitor.png) no-repeat;
-  display: block;
-  position: relative;
-  background-size: 100%;
-  padding-top: 14px;
-  padding-left: 17px;
-  padding-right: 17px;
-  padding-bottom: 109px;
-}
-.empty-space-sm {
-  height: 40px;
 }
 
-.carousel {
-  position: relative;
+@media screen and (max-width: 48em) {
+  .about-2 h2 {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+  .second-h5 {
+    font-size: 0.7rem;
+  }
+  .quote {
+    font-size: 13px;
+  }
 }
 
-.monitor-slider .webslider {
+/* section about-3 ends here */
+
+.about-4 {
+  height: 100%;
+  padding-top: 6rem !important;
+}
+.about-4 h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #ec366c;
+}
+.about-4 h5 {
+  line-height: 1.7;
+  text-align: left;
+}
+.web-design {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+.web-design img {
+  width: 100% !important;
+}
+@media screen and (max-width: 48em) {
+  .about-4 h2 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  .desc {
+    padding-top: 1rem;
+  }
+  .second-h5 {
+    font-size: 0.7rem;
+  }
+  .quote {
+    font-size: 13px;
+  }
+}
+
+.services {
   width: 100%;
-  max-width: 351px;
-  min-height: 210px;
+  height: 100%;
 }
-.monitor-slider .webslider .carousel-indicators {
-  bottom: -133px;
-  z-index: 4;
+.cards {
+  padding-top: 6rem;
 }
-.monitor-slider .webslider .carousel-indicators li {
-  border-radius: 0;
-  width: 32px;
-  height: 15px;
-  background-color: #d0d0d0;
+.cards h1,
+h6 {
+  text-align: center;
 }
-.monitor-slider .webslider .carousel-indicators .active {
-  margin: 1px;
-  background-color: #fdb312;
+.cards h6 {
+  font-size: 2rem !important;
 }
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.cards span,
+h6 {
+  color: #ec366c !important;
+}
+
+.card {
+  background: #ec366c !important;
+  color: #ffffff !important;
+  height: 100%;
+  animation: colapse 0.4s ease;
+}
+.card-content {
+  padding: 3rem 1.5rem 3rem 1.5rem;
+}
+.written-content {
+}
+.card-content h2 {
+  font-size: 1.5rem;
+}
+.card i {
+  font-size: 6rem !important;
+  text-align: left;
+}
+.card:hover {
+  animation: expand 0.4s ease;
+  height: 105%;
+}
+.card:hover .image-icon {
+  transform: rotate(360deg);
+}
+@keyframes expand {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 105%;
+  }
+}
+@keyframes colapse {
+  0% {
+    height: 105%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 48em) {
+}
+/* Service section ends here */
+
+.divider-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Images/tablet.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.divider-image p {
+  padding: 8rem 0 8rem 0;
+  color: #fff;
+  text-align: center;
+}
+.divider-image i {
+  color: #ec366c;
+}
+/* divider ends here  */
+
+.footer {
+  background: #13289e;
+  color: #fff;
+}
+.footer-content {
+  padding: 3rem 0rem;
+}
+
+.footer-content h2 {
+  color: #ec366c;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #fff;
+  border-bottom-width: 50% !important;
+}
+.footer-content img {
+  width: 200px;
+}
+
+.subfooter {
+  background: #04125f;
+  color: #fff;
+}
+.subfooter p {
+  padding-top: 15px;
+}
+.our-services ul li {
+  padding-top: 1.2rem;
+}
+.our-services ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.our-services ul li a:hover,
+.our-services ul li {
+  color: #ec366c;
 }
