@@ -23,4 +23,21 @@ function stopPreLoader() {
   preLoader.style.display = "none";
 }
 
-setTimeout(stopPreLoader, 1000);
+setTimeout(stopPreLoader, 2000);
+
+window.onscroll = function () {
+  myFunction();
+};
+
+var navbar = document.querySelector(".Nav");
+
+window.onscroll = function () {
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 50) {
+    navbar.classList.add("sticky");
+    navbar.style.background = "#1D3E9E";
+  } else {
+    navbar.classList.remove("sticky");
+    navbar.style.background = "transparent";
+  }
+};
