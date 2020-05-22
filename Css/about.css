@@ -547,7 +547,7 @@ svg {
 }
 @media screen and (max-width: 48em) {
   .golden-principle img {
-    width: auto;
+    width: 400px;
   }
 }
 
