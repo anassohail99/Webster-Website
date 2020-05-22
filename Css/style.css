@@ -507,9 +507,12 @@ blockquote span {
   font-weight: 500;
   color: #ec366c;
 }
+
 .quote {
   font-size: 18px;
   background: rgb(209, 208, 208);
+  border-left: 5px solid #ec366c;
+  font-weight: bold;
 }
 @media screen and (max-width: 48em) {
   .about-2 h2 {
