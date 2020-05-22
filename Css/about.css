@@ -551,6 +551,12 @@ svg {
   }
 }
 
+@media screen and (max-width: 36em) {
+  .golden-principle img {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 998px) {
   .golden-right {
     padding-top: 5rem;
