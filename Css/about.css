@@ -266,6 +266,10 @@ svg {
   }
 }
 @media screen and (max-width: 36em) {
+  .info {
+    left: 0;
+    padding-left: 2rem;
+  }
   .info h1 {
     font-size: 1.5rem;
   }
