@@ -2,7 +2,9 @@
 * {
   font-family: "Jost", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +19,49 @@ body {
   height: 100vh;
   background-image: linear-gradient(to top, #464dac 20%, #13289e 80%);
   display: none;
+}
+
+#return-to-top {
+  position: fixed;
+  right: 6%;
+  bottom: 3%;
+  z-index: 4;
+  background: #ec366c;
+  width: 60px;
+  height: 60px;
+  display: block;
+  opacity: 0.7;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border: 2px solid #ec366c;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 20px;
+  top: 15px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: #fff;
+}
+#return-to-top:hover i {
+  color: #ec366c;
+  top: 5px;
 }
 /* .spinner {
   margin: auto;
@@ -393,7 +438,7 @@ svg {
   color: #fff;
   font-size: 35px;
   right: 5%;
-  bottom: 10%;
+  bottom: 15%;
   border-radius: 50%;
   padding: 10px 18px 10px 18px;
   border: 2px solid #ec366c;
