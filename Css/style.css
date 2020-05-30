@@ -639,7 +639,7 @@ blockquote span {
   transform: translateX(100px) !important;
   opacity: 0 !important;
   transition: all 0.7s ease !important;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .about-4.fade-right {

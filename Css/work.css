@@ -17,12 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-.preloader {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to top, #464dac 20%, #13289e 80%);
-  display: none;
-}
 #return-to-top {
   position: fixed;
   right: 3%;
@@ -598,4 +592,5 @@ display: none;
 
 .portfolio-thumbnail img {
   width: 400px;
+  height: 250px;
 }

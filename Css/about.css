@@ -398,6 +398,12 @@ svg {
 .social-icon i {
   margin-top: 12px;
 }
+@media screen and (max-width: 1000px) {
+  nav ul {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 
 @media screen and (max-width: 48em) {
   .wrap ul.wrap-nav > li {
@@ -570,15 +576,8 @@ svg {
 
 .our-approach {
   padding-top: 4rem;
-  transform: translateX(100px) !important;
-  opacity: 0 !important;
-  transition: all 1s ease;
 }
 
-.our-approach.fade-left {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
-}
 .approach h2 {
   color: #ec366c;
 }
@@ -600,15 +599,8 @@ svg {
 
 .golden-principle {
   padding: 5rem 0;
-  transform: translateX(-100px) !important;
-  opacity: 0 !important;
-  transition: all 1s ease;
 }
 
-.golden-principle.fade-right {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
-}
 .golden-principle h2 {
   color: #ec366c;
 }
@@ -642,17 +634,6 @@ svg {
 }
 /* *******************GOLDEN ENDS HERE************** */
 
-#process {
-  transform: translateY(100px) !important;
-  opacity: 0 !important;
-  transition: all 0.7s ease;
-}
-
-#process.fade-up {
-  transform: translateY(0) !important;
-  opacity: 1 !important;
-}
-
 .process i {
   padding: 2.5rem;
   border: 3px solid #9e9d9d;
@@ -684,17 +665,6 @@ svg {
 }
 
 /* ****************************Testimonials*********************************** */
-
-#testimonials {
-  transform: translateY(100px) !important;
-  opacity: 0 !important;
-  transition: all 0.7s ease;
-}
-
-#testimonials.fade-up {
-  transform: translateY(0) !important;
-  opacity: 1 !important;
-}
 
 .testimonial {
   background: #ec366c;
