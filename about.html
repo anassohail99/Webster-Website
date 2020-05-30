@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webster</title>
     <link rel="stylesheet" href="./Css/about.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css"
-      integrity="sha256-G2+IcX6XRBcYufvUNrCqZdR1PDbJkBU164G3zkt2C8Q="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -32,15 +27,11 @@
     />
   </head>
   <body>
-    <div class="preloader">
-      <div class="spinner"></div>
-    </div>
-
     <!-- Return to Top -->
     <a href="javascript:" id="return-to-top"
       ><i class="fa fa-chevron-up"></i
     ></a>
-    <section class="main">
+    <section class="main2">
       <section class="about-header">
         <div class="about-header">
           <nav class="Nav">
@@ -118,7 +109,7 @@
             </div>
           </div>
 
-          <div class="info mt-5">
+          <div class="info mt-5" data-aos="fade-right">
             <h1 class="mt-3">ABOUT <span>US</span></h1>
             <h6 class="mr-3">
               A passionate team of the expert designers focusing on the quality
@@ -135,7 +126,7 @@
       </section>
       <!-- HEADER SECTION END -->
 
-      <section class="About-us">
+      <section class="About-us" data-aos="fade-up">
         <div class="about-us">
           <div class="row">
             <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -162,7 +153,7 @@
         </div>
       </section>
 
-      <section class="our-approach">
+      <section class="our-approach" data-aos="fade-right">
         <div class="container">
           <div class="approach">
             <h2>OUR APPROACH</h2>
@@ -241,16 +232,13 @@
         </div>
       </section>
 
-      <section id="process">
+      <section id="process" data-aos="fade-right">
         <div class="process">
           <h1 class="text-center mt-5">THIS IS HOW WE CREATE</h1>
           <p class="text-center mt-2 mb-5">A dreame website for you</p>
           <div class="container">
             <div class="row">
-              <div
-                class="col-12 col-md-3 col-sm-12 col-xs-12 text-center"
-                data-aos="fade-up"
-              >
+              <div class="col-12 col-md-3 col-sm-12 col-xs-12 text-center">
                 <i class="fa fa-file"></i>
                 <h2>
                   ANALYZE
@@ -262,11 +250,7 @@
                   that are needed to stay in the competition.
                 </h5>
               </div>
-              <div
-                class="col-12 col-md-3 col-sm-12 col-xs-12 text-center"
-                data-aos="fade-up"
-                delay="1000"
-              >
+              <div class="col-12 col-md-3 col-sm-12 col-xs-12 text-center">
                 <i class="fa fa-magic"></i>
                 <h2>
                   PLAN
@@ -279,11 +263,7 @@
                   interactive.
                 </h5>
               </div>
-              <div
-                class="col-12 col-md-3 col-sm-12 col-xs-12 text-center"
-                data-aos="fade-up"
-                delay="1500"
-              >
+              <div class="col-12 col-md-3 col-sm-12 col-xs-12 text-center">
                 <i class="fa fa-filter"></i>
                 <h2>
                   CREATE
@@ -296,11 +276,7 @@
                   you with the effective platform for your business
                 </h5>
               </div>
-              <div
-                class="col-12 col-md-3 col-sm-12 col-xs-12 text-center"
-                data-aos="fade-up"
-                delay="2000"
-              >
+              <div class="col-12 col-md-3 col-sm-12 col-xs-12 text-center">
                 <i class="fa fa-laptop"></i>
                 <h2>
                   DELIVER
@@ -320,7 +296,7 @@
 
       <!-- ******************************testimonials************************************* -->
 
-      <section id="testimonials">
+      <section id="testimonials" data-aos="zoom-in">
         <section class="testimonial py-5">
           <div class="container text-center py-5">
             <h1>TESTIMONIAL</h1>
@@ -510,8 +486,8 @@
 
     <!-- SCRIPTS -->
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -528,17 +504,15 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"
-      integrity="sha256-issEYoOUmTZW2tEfIwKfxq0Tz5DPqh9d+JFQsnJ2hKk="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         offset: 120,
         duration: 1000,
+        delay: 100,
       });
     </script>
+
     <!-- jquerry -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -546,6 +520,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./Js/app.js"></script>
-    <script src="./animations/about.js"></script>
+    <!-- <script src="./animations/about.js"></script> -->
   </body>
 </html>
