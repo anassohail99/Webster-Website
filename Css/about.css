@@ -23,7 +23,7 @@ body {
 
 #return-to-top {
   position: fixed;
-  right: 6%;
+  right: 3%;
   bottom: 3%;
   z-index: 4;
   background: #ec366c;
@@ -208,6 +208,7 @@ nav ul li a:hover {
   letter-spacing: 2px;
   margin-top: 200px;
 }
+
 .info h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -441,22 +442,30 @@ svg {
   background: #ec366c;
   color: #fff;
   font-size: 35px;
-  right: 5%;
-  bottom: 15%;
-  border-radius: 50%;
+  right: 0%;
+  top: 15%;
   padding: 10px 18px 10px 18px;
-  border: 2px solid #ec366c;
   transition: 0.5s;
-  opacity: 0.5;
+  transform: translateX(65%);
+}
+.contact i {
+  font-size: 35px;
+  padding-right: 1.5rem;
 }
 .contact:hover {
   background: #fff;
-  border: 2px solid #ec366c;
+
   color: #ec366c;
+  transform: translateX(0);
 }
 .contact a {
   color: inherit !important;
   text-decoration: none !important;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /**********************************FOOTER******************************************/
 
@@ -561,6 +570,14 @@ svg {
 
 .our-approach {
   padding-top: 4rem;
+  transform: translateX(100px) !important;
+  opacity: 0 !important;
+  transition: all 1s ease;
+}
+
+.our-approach.fade-left {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
 }
 .approach h2 {
   color: #ec366c;
@@ -583,6 +600,14 @@ svg {
 
 .golden-principle {
   padding: 5rem 0;
+  transform: translateX(-100px) !important;
+  opacity: 0 !important;
+  transition: all 1s ease;
+}
+
+.golden-principle.fade-right {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
 }
 .golden-principle h2 {
   color: #ec366c;
@@ -617,6 +642,17 @@ svg {
 }
 /* *******************GOLDEN ENDS HERE************** */
 
+#process {
+  transform: translateY(100px) !important;
+  opacity: 0 !important;
+  transition: all 0.7s ease;
+}
+
+#process.fade-up {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
 .process i {
   padding: 2.5rem;
   border: 3px solid #9e9d9d;
@@ -648,6 +684,17 @@ svg {
 }
 
 /* ****************************Testimonials*********************************** */
+
+#testimonials {
+  transform: translateY(100px) !important;
+  opacity: 0 !important;
+  transition: all 0.7s ease;
+}
+
+#testimonials.fade-up {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
 
 .testimonial {
   background: #ec366c;
