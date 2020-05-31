@@ -527,6 +527,7 @@ svg {
 
 .About-us {
   height: 100%;
+
   background: #f7f7f7;
 }
 
@@ -537,7 +538,7 @@ svg {
 }
 
 .about-content {
-  padding: 5rem 3rem 0rem 3rem;
+  padding: 5rem 0 3rem 0rem;
 }
 
 .about-content h2 {
@@ -564,11 +565,8 @@ svg {
   background-position: right right;
 }
 @media screen and (max-width: 48em) {
-  .contact-image {
-    height: 100% !important;
-  }
-  .about-content h5 {
-    padding-bottom: 3rem;
+  .about-content {
+    padding: 5rem 0 3rem 0;
   }
 }
 
