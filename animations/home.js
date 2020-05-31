@@ -24,7 +24,7 @@ $(document).ready(function () {
   var scene = new ScrollMagic.Scene({
     triggerElement: ".about-4",
   })
-    .setClassToggle(".about-4", "fade-right")
+    .setClassToggle(".about-4", "fade-down")
     .addTo(controller);
 
   var scene = new ScrollMagic.Scene({
