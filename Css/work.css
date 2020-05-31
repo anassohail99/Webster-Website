@@ -115,7 +115,7 @@ animation: sk-rotate 2s infinite linear;
   background-image: linear-gradient(to top, #464dac 20%, #13289e 80%);
 }
 
-.main {
+.main4 {
   animation: fadein 1s linear;
 }
 
@@ -316,7 +316,7 @@ svg {
 }
 
 /* .overlay::-webkit-scrollbar {
-display: none;
+  display: none;
 } */
 .wrap {
   color: #fff;
