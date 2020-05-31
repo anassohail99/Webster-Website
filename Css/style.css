@@ -636,14 +636,13 @@ blockquote span {
 .about-4 {
   height: 100%;
   padding-top: 6rem !important;
-  transform: translateX(100px) !important;
+  transform: translateY(-100px) !important;
   opacity: 0 !important;
   transition: all 0.7s ease !important;
-  overflow-x: hidden !important;
 }
 
-.about-4.fade-right {
-  transform: translateX(0) !important;
+.about-4.fade-down {
+  transform: translateY(0) !important;
   opacity: 1 !important;
 }
 .about-4 h2 {
