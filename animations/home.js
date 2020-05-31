@@ -12,7 +12,7 @@ $(document).ready(function () {
   var scene = new ScrollMagic.Scene({
     triggerElement: ".about-2",
   })
-    .setClassToggle(".about-2", "fade-right")
+    .setClassToggle(".about-2", "zoom-in")
     .addTo(controller);
 
   var scene = new ScrollMagic.Scene({
