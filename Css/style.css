@@ -221,6 +221,10 @@ svg {
 }
 
 @media screen and (max-width: 48em) {
+  svg {
+    bottom: 0;
+    width: 100%;
+  }
   nav {
     height: 10%;
   }
