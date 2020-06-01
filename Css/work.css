@@ -593,4 +593,43 @@ svg {
 .portfolio-thumbnail img {
   width: 400px;
   height: 250px;
+  transition: all 0.5s ease;
+}
+.portfolio-container .col-md-4 {
+  padding-left: 0 !important;
+}
+.img-content {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  color: #fff;
+  font-size: 25px;
+  transform: translateY(150px);
+  transition: all 0.5s ease;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  background: #ec366c;
+}
+.portfolio-thumbnail:hover .img-overlay {
+  opacity: 0.8;
+}
+
+.portfolio-thumbnail:hover img {
+  transform: scale(1.5);
+}
+
+.portfolio-thumbnail:hover .img-content {
+  visibility: visible;
+  transform: translateY(0);
+  transform: scale(1.5);
 }
